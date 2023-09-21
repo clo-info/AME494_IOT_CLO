@@ -1,7 +1,7 @@
 var express = require("express");
 var server = express();
 var hostname = process.env.HOSTNAME || 'localhost';
-var port = 1234;
+var port = 8080;
 
 server.get("/", function (req, res) {
     res.redirect("index.html")
