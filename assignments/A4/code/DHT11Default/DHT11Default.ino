@@ -8,11 +8,11 @@ TTGOClass *ttgo;
 #include <HTTPClient.h>
 
 
-const char* ssid = "";
-const char* password = "";
+const char* ssid = "hey lol heres this";
+const char* password = "JJKBad__";
 
 //Your Domain name with URL path or IP address with path
-const char* serverName = "http://192.168.0.195:8080/sendData";
+const char* serverName = "http://3.95.229.53:8080/sendData";
 
 // the following variables are unsigned longs because the time, measured in
 // milliseconds, will quickly become a bigger number than can be stored in an int.
