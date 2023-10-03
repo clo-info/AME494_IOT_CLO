@@ -28,7 +28,7 @@ String response;
 //      VCC: 5V or 3V
 //      GND: GND
 //      DATA: 21 or 25
-int pinDHT11 = 21;
+int pinDHT11 = 25;
 SimpleDHT11 dht11(pinDHT11);
 
 
