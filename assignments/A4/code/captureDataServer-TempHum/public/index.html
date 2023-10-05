@@ -22,21 +22,43 @@ function start()
 <div id="turorial">
   <h1> Tutorial </h1>
   <span>
-    <h2>AWS Server - it is assumed you already have an AWS account as well as Arduino</h2> 
+    <h2>AWS Server - it is assumed you already have an AWS account and well as access to a sandbox and Arduino</h2> 
     
     <h3>1: Open and connect to an EC2 instance running on Ubuntu with the following settings: AMI Ubuntu version 20.4 LTS, t.2 micro, vockey as the key pair,
        with a new security group and 28 GiB</h3>
-    <img src=AWS_1.png">
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_1.png" width="1000" height="500">
 
     <h3>2: Click on the instance ID and go to the security tab</h3>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_2.png" width="1000" height="500">
+
     <h3>3: Click on the blue security group link and go to edit inbound rules</h3>
-    <h3>2: Run the command between the two single quotes: <br>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_3_1.png" width="1000" height="500"><br>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_3_2.png" width="1000" height="500"><br>
+
+    <h3>4: Click add rule and enter a new rule that open port 8080, set to IPv4 protocol, then hit 'Save Rules'</h3>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_4.png" width="1000" height="500">
+
+    <h3>5: Go back to the instances screen and connect to the ubuntu shell</h3>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_5.png" width="1000" height="500">
+
+    <h3>6: Run the command between the two single quotes and wait for it to finish completel: <br>
       'curl -s https://gist.githubusercontent.com/tejaswigowda/f289e9bff13d152876e8d4b3281142f8/raw/df37df2e16a3166e686357a045751a7c18bbeebe/installNodeMongoUbuntu16.04.sh  | bash'</h3><br>
-    <h3>3: Go to the class repository at: 'https://github.com/tejaswigowda/ame498-598Fall2023/tree/main' </h3>
-    <h3>4: Press the blue 'Code' button and copy the URL </h3><br>
-    <h3>5: Return to your EC2 Server, and enter 'git clone ' and then paste the URL, let the command run its course </h3><br>
-    <h3>6: CD to AME498-598Fall2023/ASSIGNMENTS/A4/code/captureDataServer-TempHum</h3><br>
-    <h3>7: type in node server.js to run the server</h3>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_6.png" width="1000" height="500">
+
+    <h3>7: Go to my repository at: 'https://github.com/clo-info/AME494_IOT_CLO' </h3>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_7.png" width="1000" height="500">
+
+    <h3>8: Press the blue 'Code' button and copy the URL </h3><br>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_8.png" width="1000" height="500">
+
+    <h3>9: Return to your EC2 Server, and enter 'git clone ' and then paste the URL, let the command run its course </h3><br>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_9.png" width="1000" height="500">
+
+    <h3>10: CD to AME494_IOT_CLO/assignments/A4/code/captureDataServer-TempHum</h3><br>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_10.png" width="1000" height="500">
+
+    <h3>11: type in node server.js to run the server</h3>
+    <img src="./tutorialScreenshots/AWS_Pics/AWS_11.png" width="1000" height="500">
   </span>
   <span>
     <h2>Arduino</h2>
